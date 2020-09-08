@@ -48,7 +48,7 @@ typedef struct
 #ifdef amcl_curve_ZZZ_EXPORTS
 #define EXTERNAL_SYMBOL_DECLARATION __declspec(dllexport)
 #else
-#define EXTERNAL_SYMBOL_DECLARATION __declspec(dllimport)
+#define EXTERNAL_SYMBOL_DECLARATION extern __declspec(dllimport)
 #endif
 
 #else
